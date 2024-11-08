@@ -1,0 +1,23 @@
+Sampling colors from points
+
+	/* Testing the GetPoint() function, which seems to not be working properly (e.g. I put Blue but the read value is Red...)
+	color_test = 0;
+	color_test = LCD_GetPoint(100, 100);
+	color_test_rgb_uncompressed = 0;
+	color_test_rgb_uncompressed = uncompress_rgb(color_test);
+	I
+	*/ // The problem has been found. See the notes relative to LabX1 on OneNotes.
+	
+	
+Drawing on LCD
+
+	for (i = 0; i < 1; i++) {
+		for (j = 0; j < 1; j++) {
+			//LCD_DrawLine(k + i, k + j, v + i, v + j, Yellow);
+		}
+	}
+	PutChar(k, k, 'C', Blue, White);
+	PutChar(k + 6, k, 'C', Blue, White);
+	PutChar(k, k + 16, 'C', Blue, White);
+	PutChar(k + 8, k + 16, 'C', Blue, White);
+	GUI_Text(k + 7, k + 15, "Mario Draghi", Blue, White);
